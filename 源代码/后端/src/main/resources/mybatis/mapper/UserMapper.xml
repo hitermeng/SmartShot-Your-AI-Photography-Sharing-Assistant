@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.aicamera.backend.mapper.UserMapper">
+
+    <insert id="insert" parameterType="cn.aicamera.backend.model.User">
+        INSERT INTO users (username, password, email, gender, age, preference)
+        VALUES (#{username}, #{password}, #{email}, #{gender}, #{age}, #{preference})
+    </insert>
+
+    <update id="update" parameterType="cn.aicamera.backend.model.User">
+        UPDATE users
+        SET username = #{username}, gender = #{gender}, age = #{age}, preference = #{preference}, avatarUrl = #{avatarUrl}
+        WHERE email = #{email}
+    </update>
+
+    <select id="findByEmail" resultType="cn.aicamera.backend.model.User">
+        SELECT * FROM users WHERE email = #{email}
+    </select>
+</mapper>

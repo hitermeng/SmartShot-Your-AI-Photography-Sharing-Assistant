@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">智拍</string>
+    <string name="camera_permission_required">应用需要使用相机权限\n应用将获取相机内的实时影像\n图片将自动使用本地模型进行分析，用于构图引导\n**所有的图像都不会在没有您授权的情况下保存到本地或云端**
+        \n\n如果没有弹出请求框\n请前往**“设置”**页面手动设置</string>
+    <string name="grant_permission">我已知晓\n确认授权使用相机\n并将图片用于引导</string>
+    <string name="camera_permission_denied_permanently">相机权限获取失败，请前往设置页面手动设置</string>
+
+    <string name="grade_perfect">简直是完美的作品！</string>
+    <string name="grade_great">做得很好，再调整一下就更棒了</string>
+    <string name="grade_good">好起来了，再加加油！</string>
+    <string name="grade_bad">可能角度有些不对，再调整一下吧</string>
+    <string name="grade_worst">可能换个位置会比较合适</string>
+
+    <string name="camera_preview_title">图片预览</string>
+    <string name="camera_preview_notice">预览状态下，图片有一定压缩，不代表最终效果</string>
+
+    <string name="save_image_success">图片保存成功</string>
+    <string name="save_image_failed">图片保存失败</string>
+
+    <string name="chat_welcome">欢迎使用文案生成功能!\n我将使用根据你提供的图片和个性化平台风格生成文案，请告诉我你需要的文案风格！
+        如：请为我生成微博平台的文案。\n你也可以直接点击发送，我会根据图片自动生成适合的文案</string>
+    <string name="chat_default">为图片生成个性化文案</string>
+    <string name="chat_page_name">文案一键生成</string>
+
+    <string name="app_settings">应用设置</string>
+</resources>

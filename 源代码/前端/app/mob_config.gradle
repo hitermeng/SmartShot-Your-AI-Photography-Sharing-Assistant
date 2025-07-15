@@ -1,0 +1,17 @@
+MobSDK {
+    appKey "3afe7585d4338"
+    appSecret "acf52c9a0ba6cfe0c570e83e42b2663f"
+    ShareSDK {
+        devInfo {
+            SinaWeibo {
+                id 1
+                sortId 59
+                appKey "568898243"
+                appSecret "38a4f8204cc784f81f9f0daaf31e02e3"
+                callbackUri "http://www.sharesdk.cn"
+                shareByAppClient true
+                enable true
+            }
+        }
+    }
+}

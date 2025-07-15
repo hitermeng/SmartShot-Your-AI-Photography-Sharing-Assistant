@@ -1,0 +1,31 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: backend
+  datasource:
+    url: jdbc:mysql://localhost:3306/aicamera
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  data:
+    redis:
+      host: localhost
+      port: 6379
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 200MB
+jwt:
+  secret: JWTSEcretCreATE2025FORaiCamARA
+  expiration: 604800 # 7天
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
+minio:
+  endpoint: http://192.168.117.129:9000
+  access-key: root
+  secret-key: 123456789
+  bucket-name: aicamera
+model:
+  endpoint: http://localhost:5000
